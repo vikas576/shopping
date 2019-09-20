@@ -1,5 +1,14 @@
-  <div class="col-md-12">
+  <div class="col-md-12" [style.margin]="'0 0 10px 0'">
     <app-shopping-edit></app-shopping-edit>
-    <hr>
-    <p>The List</p>
   </div>
+    <hr>
+    <div class="col-md-12">
+        <ul class="list-group clearfix">
+            <a href="" class="list-group-item" *ngFor="let ingredient of Ingredients">
+             {{ingredient.name}}      ({{ingredient.amount}})
+            </a>
+        </ul>
+
+    </div>
+
+
